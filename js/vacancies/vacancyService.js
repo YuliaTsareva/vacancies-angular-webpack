@@ -36,7 +36,8 @@ export default function($http) {
         name: dto.name,
         company: dto.employer.name,
         companyLogo: dto.employer.logo_urls && dto.employer.logo_urls['90'],
-        salary: dto.salary
+        salary: dto.salary,
+        url: dto.alternate_url
       };
 
       if (dto.address && dto.address.metro) {

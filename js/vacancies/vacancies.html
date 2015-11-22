@@ -11,7 +11,7 @@
   <tbody>
   <tr ng-repeat="vacancy in vacancies">
     <td>
-      <a href="{{vacancy.alternate_url}}">{{vacancy.name}}</a>
+      <a href="{{vacancy.url}}">{{vacancy.name}}</a>
     </td>
     <td>
       <img ng-if="vacancy.companyLogo" ng-src="{{vacancy.companyLogo}}" title="{{vacancy.company}}">
